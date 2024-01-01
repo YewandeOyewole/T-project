@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <div>Yewande Oyewole</div>
+        <div class="logo">
+            <a href="/"><span>Y</span>ewande <span>O</span>yewole</a>            
+        </div>
 
         <ul>
          <li>
@@ -19,7 +25,6 @@
          </li>
          <li>
             <a href="">Linkedin</a>
-
          </li>
         </ul>
     </nav>
@@ -34,11 +39,31 @@
                 <button class="btn">Contact</button>
               </div>
             </div>
-            <div></div>
+
+            <div class="hero-img">
+                
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/assets/webdev.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/assets/webdev.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/assets/webdev.jpg" alt=""></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
 
         </div>
 
     </section>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
