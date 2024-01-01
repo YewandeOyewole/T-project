@@ -1,0 +1,85 @@
+:root{
+    --grey:#EEF5FF;
+    --color1:#B4D4FF;
+    --color2:#86B6F6;
+    --color3:#176B87;
+}
+
+
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+.container{
+    padding: 0 3rem;
+
+}
+.btn{
+    width: 130px;
+    padding: 0 6px;
+    padding:8px 0 ;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 3rem;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+
+}
+nav ul li a{
+    text-decoration: none;
+
+}
+#hero{
+    background-color: var(--grey);
+    height: 100vh;
+    width: 100%;
+    
+}
+.herobox{
+    display: flex;
+    width: 100%;
+
+}
+.hero-desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.hero-desc h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--color3);
+}
+.hero-cta{
+    display: flex;
+    gap: 10px;
+
+}
+.hero-cta :first-child{
+    background-color: var(--color3);
+    color: white;
+    transition: all;
+}
+.hero-cta :nth-child(even){
+    color:var(--color3) ;
+    border: 1px solid var(--color3);
+    background-color: transparent;
+}
