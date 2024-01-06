@@ -305,7 +305,6 @@ nav ul li a{
 .instructor-btn button:hover{
     color: #EEF5FF;
     background-color: black;
-
 }
 
 /* ------------------------------------- */
@@ -349,13 +348,47 @@ nav ul li a{
 .course-card{
     width: 200px;
     height: 200px;
-    border: 1px solid #86B6F6;
     padding: 4px;
     border-radius: 4px;
     transition: all .3s ease-in;
     background-color: var(--color1);
+    object-fit: contain;
+    position: relative;
+    transition: all .3s ease-in-out;
 }
-.course-card:hover{
-    background-color: #EEF5FF;
-    border: none;
+.course-card img{
+    width: 100%;
+    height: 100%;
+}
+.course-card .overlay{
+    position: absolute;
+    padding: 8px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    transition: all .5s ease-in-out;
+
+}
+.course-card .overlay h3{
+    font-size: 14px;
+    color: #EEF5FF;
+}
+.course-card .overlay small{
+    color: #EEF5FF;
+    display: none;
+}
+.course-card:hover .overlay{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.course-card:hover .overlay small{
+    display: block;
+    text-align: center;
 }
