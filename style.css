@@ -27,12 +27,18 @@
     height: 100%;
 }
 
+
 /* ------------------------------------- */
 /* COMMON STYLES */
 /* ------------------------------------- */
 
 .container{
     padding: 0 5rem;
+}
+.headerText{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 48px;
 }
 
 .btn{
@@ -152,7 +158,7 @@ nav ul li a{
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:435px) {
     .hero-desc h1{
         font-size: 36px;
     }
@@ -161,3 +167,194 @@ nav ul li a{
     }
 }
 
+/* ------------------------------------- */
+/* HEADER */
+/* ------------------------------------- */
+#experience{
+    width: 100%;
+    background-color: #fff;
+    padding: 3rem 0;
+}
+#experience h1{
+    color: #176B87;
+}
+.experience-box{
+    display: flex;
+}
+.my-experience{
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.my-experience h2{
+
+}
+.my-experience p{
+    margin: 2rem 0;
+    color: gray;
+}
+
+.skill-box{
+    display: flex;
+    gap: 14px;
+}
+
+.skill-card{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    position: relative;
+}
+@media screen and (max-width: 768px) {
+    .experience-box{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .my-experience{
+        width: 100%;
+        padding-right: 0;
+    }
+    .skill-box{
+        overflow-x: scroll;
+    }
+}
+/* ------------------------------------- */
+/* INSTRUCTOR SECTION */
+/* ------------------------------------- */
+
+#instructors{
+    width: 100%;
+    background-color: var(--color3);
+    padding: 3rem 0;
+}
+#instructors h1{
+    color: #EEF5FF;
+
+}
+
+.instructor-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.instructor-card{
+    width: 320px;
+    height: 250px;
+    background: #EEF5FF;
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.instructor-comment{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #176B87;
+}
+.instructor-comment p{
+    color: rgba(0, 0, 0, 0.8);
+}
+.instructor-details{
+    display: flex;
+    gap: 20px;
+}
+.instructor-details img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-bottom: 2px solid #176B87;
+}
+.instructor-desc h3{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-size: 16px;
+}
+.instructor-desc small{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-style: oblique;
+}
+.instructor-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem ;
+}
+.instructor-btn button{
+    width: 150px;
+    padding: 10px;
+    background: #EEF5FF;
+    color: #176B87;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.instructor-btn button:hover{
+    color: #EEF5FF;
+    background-color: black;
+
+}
+
+/* ------------------------------------- */
+/* ODUMARETECH SECTION */
+/* ------------------------------------- */
+#odumaretech{
+    background-color: var(--grey); 
+    padding: 3rem 0;   
+}
+#odumaretech h1{
+ color: var(--color3);
+}
+.odumare{
+
+    display: flex;
+}
+
+.about-odumare{
+    width: 50%;
+}
+
+.about-odumare{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-odumare p{
+    color: gray;
+}
+
+.course-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.course-card{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #86B6F6;
+    padding: 4px;
+    border-radius: 4px;
+    transition: all .3s ease-in;
+    background-color: var(--color1);
+}
+.course-card:hover{
+    background-color: #EEF5FF;
+    border: none;
+}
