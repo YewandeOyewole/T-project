@@ -142,6 +142,7 @@ nav ul li a{
     color: #EEF5FF;
 }
 
+
 @media screen and (max-width:768px) {
     .container{
         padding: 0 3rem;
