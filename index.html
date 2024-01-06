@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
     <link
   rel="stylesheet"
+  
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
     <title>Document</title>
@@ -121,7 +123,7 @@
         <div class="container ">
             <h1 class="headerText">Meet The Instructors</h1>
             <div class="instructor-box">
-                <div class="instructor-card">
+                <div data-aos="zoom-in-down" class="instructor-card">
                     <div class="instructor-comment">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui vitae ducimus labore similique consequatur, vel eos. Non nisi quas tenetur iusto velit esse illo magnam dolor officiis autem asperiores </p>
                     </div>
@@ -134,7 +136,7 @@
                         </div>
                     </div>
                 </div>                
-                <div class="instructor-card">
+                <div data-aos="zoom-in-down" class="instructor-card">
                     <div class="instructor-comment">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui vitae ducimus labore similique consequatur, vel eos. Non nisi quas tenetur iusto velit esse illo magnam dolor officiis autem asperiores </p>
                     </div>
@@ -147,7 +149,7 @@
                         </div>
                     </div>
                 </div>                
-                <div class="instructor-card">
+                <div data-aos="zoom-in-down" class="instructor-card">
                     <div class="instructor-comment">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui vitae ducimus labore similique consequatur, vel eos. Non nisi quas tenetur iusto velit esse illo magnam dolor officiis autem asperiores </p>
                     </div>
@@ -210,7 +212,7 @@
     </section>
     <section id="instructors">
         <div class="container instructor-box">
-            <div class="instructor-card">
+            <div data-aos="zoom-in-down" class="instructor-card">
                 <div class="instructor-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ratione, unde quis, autem aspernatur commodi quod quos fuga, corrupti tempore quasi. Placeat, recusandae accusamus odit iure voluptatem asperiores illum necessitatibus.</p>
                 </div>
@@ -226,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <div class="instructor-card">
+            <div data-aos="zoom-in-down" class="instructor-card">
                 <div class="instructor-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ratione, unde quis, autem aspernatur commodi quod quos fuga, corrupti tempore quasi. Placeat, recusandae accusamus odit iure voluptatem asperiores illum necessitatibus.</p>
                 </div>
@@ -242,7 +244,7 @@
                     </div>
                 </div>
             </div>
-            <div class="instructor-card">
+            <div data-aos="zoom-in-down" class="instructor-card">
                 <div class="instructor-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ratione, unde quis, autem aspernatur commodi quod quos fuga, corrupti tempore quasi. Placeat, recusandae accusamus odit iure voluptatem asperiores illum necessitatibus.</p>
                 </div>
@@ -265,5 +267,15 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="../../assets/vendor/aos/dist/aos.js"></script>
+    <script>
+        $(document).on('ready', function () {
+          // initialization of aos
+          AOS.init({
+            duration: 650,
+            once: true
+          });
+        });
+      </script>
 </body>
 </html>
