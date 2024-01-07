@@ -86,6 +86,29 @@ nav ul li a{
 
 }
 
+.toogle-box{
+    display: none;
+}
+
+@media screen and (max-width: 768px)  {
+    .nav-link-box{
+        padding-top: 3rem;
+        gap: 40px;
+        position: absolute;
+        top: 70px;
+        width: 1.5%;
+        height: 90vh;
+        width: 97%;
+        background-color: #fff;
+        flex-direction: column;
+        z-index: 9999999;
+    }
+
+    .toogle-box{
+        display: inline-block;
+    }
+}
+
 /* ------------------------------------- */
 /* HERO SECTION */
 /* ------------------------------------- */
