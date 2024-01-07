@@ -202,7 +202,7 @@ nav ul li a{
 
 .skill-card{
     height: 150px;
-    width: 150px;
+    width: 200px;
     border: 1px solid #f4f4f4;
     border-radius: 4px;
     display: flex;
@@ -210,6 +210,36 @@ nav ul li a{
     align-items: center;
     padding: 4px;
     position: relative;
+}
+.skill-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.social-icon{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.social-icon a{
+    text-decoration: none;
+}
+.social-icon i{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--color3);
+    color: var(--color3);
+    transition: all .3s ease-in-out;
+}
+.social-icon i:hover{
+    background-color: var(--color3);
+    color: #EEF5FF;
 }
 @media screen and (max-width: 768px) {
     .experience-box{
