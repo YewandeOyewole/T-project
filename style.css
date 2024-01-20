@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Niconne&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,200&family=Lato:wght@400;700&family=Manrope&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;1,6..12,300;1,6..12,700&family=Nunito:wght@200;400&family=Open+Sans:wght@700&family=Poppins:wght@700&family=Righteous&family=Roboto+Serif:opsz@8..144&family=Vidaloka&display=swap');
+
+
 :root{
     --grey:#EEF5FF;
     --color1:#B4D4FF;
@@ -8,6 +11,7 @@
 
     --Niconne: 'Niconne'; 
     --Nunito: 'nunito'; 
+    --roboto: 'roboto'
 }
 
 *{
@@ -175,6 +179,11 @@ nav ul li a{
     width: 100%;
     background-color: #fff;
     padding: 3rem 0;
+    background-image: url('assets/banner.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 #experience h1{
     color: #176B87;
@@ -421,4 +430,39 @@ nav ul li a{
 .course-card:hover .overlay small{
     display: block;
     text-align: center;
+}
+#banner {
+    width: 100%;
+    height: 30vh;
+}
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+
+}
+#coming-soon{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.countdown {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+
+}
+.day,.hour,.minutes,.second {
+    font-size: 3rem;
+
+}
+.waiting{
+    height: 50vh;
 }
