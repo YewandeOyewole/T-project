@@ -22,6 +22,7 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+// <<<<<<< HEAD
   
 
 // -------------------------- Typewriter Effect ---------------------------
@@ -44,30 +45,27 @@ typeWriter()
 
 document.addEventListener('DOMContentLoaded', function() {
   // Set the date we're counting down to (replace with your desired date)
-  const countdownDate = new Date("Feb 4, 2024 00:00:00").getTime();
+  const countDate = new Date("Feb 4, 2024 00:00:00").getTime();
 
   // Update the countdown every 1 second
   const countdownInterval = setInterval(function() {
     // Get the current date and time
-    const currentDate = new Date().getTime();
+    const now = new Date().getTime();
+    const gap = countDate - now;
+    // console.log(countDate);
 
-    // Calculate the time remaining
-    const timeRemaining = countdownDate - currentDate;
-
-    // Calculate days, hours, minutes, and seconds
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-    // Display the countdown
-    document.getElementById('days').innerHTML = days + 'Days';
-    document.getElementById('hours').innerHTML = hours + 'Hours';
-    document.getElementById('minutes').innerHTML = minutes + 'Mins';
-    document.getElementById('seconds').innerHTML = seconds + 'Sec';
+    const textDay = Math.floor(gap / (1000 * 60 * 60 * 24));
+    const textHour = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const textMinutes = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+    const textSecond = Math.floor((gap % (1000 * 60)) / 1000);
+    // console.log(textDay)
+       document.querySelector(".day").innerText = textDay;
+    document.querySelector(".hour").innerText = textHour;
+    document.querySelector(".minutes").innerText = textMinutes;
+    document.querySelector(".second").innerText = textSecond;
 
     // Check if the countdown is over
-    if (timeRemaining < 0) {
+    if (gap < 0) {
       clearInterval(countdownInterval);
       document.getElementById('countdown').innerHTML = "EXPIRED";
     }
