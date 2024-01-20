@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6a542743ba.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="script.js"></script> -->
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav data-aos="flip-down">
         <div class="logo">
             <a href="/"><span>Y</span>ewande <span>O</span>yewole</a>            
         </div>
@@ -32,17 +35,19 @@
     </nav>
 
     <section id="hero">
-        <div class="container herobox" >
+        <div  class="container herobox" >
             <div class="hero-desc">
-              <h1>Odumaretech Final Project.</h1>
+              <h1 id="title"></h1>
               <p>Tribute Project</p>
-              <div class="hero-cta">
+              <div data-aos="fade-up" class="hero-cta">
                 <button class="btn">Explore</button>
                 <button class="btn">Contact</button>
               </div>
             </div>
 
-            <div class="hero-img">
+            <div data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="hero-img">
                 
 
                 <!-- Slider main container -->
@@ -71,34 +76,34 @@
 
             <div class="experience-box">
                 <div class="my-experience">
-                    <h2>Transitioning into Frontend Development</h2>
+                    <h2 data-aos="fade-up-right"  data-aos-duration="1000">Transitioning into Frontend Development</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur assumenda veniam, nemo accusamus eos. Cum ab sapiente, perspiciatis, repellat voluptate repellendus, laboriosam rerum facere nulla doloribus aut incidunt illo impedit assumenda eum! Inventore voluptas nemo amet ipsum aspernatur culpa.</p>
+                    <p data-aos="fade-up-right"  data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur assumenda veniam, nemo accusamus eos. Cum ab sapiente, perspiciatis, repellat voluptate repellendus, laboriosam rerum facere nulla doloribus aut incidunt illo impedit assumenda eum! Inventore voluptas nemo amet ipsum aspernatur culpa.</p>
 
                     <div>
                         
                         <div class="social-icon">
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            <a href=""></a>
+                            <a data-aos="fade-up-right"  data-aos-duration="1000"  href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="100" href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" href=""><i class="fa-brands fa-instagram"></i></a>
+                            <!-- <a href=""></a> -->
                            </div>
                     </div>
                 </div>
 
-                <div>
+                <div class="skills-container">
                     <div>
                         <h3>My Skills</h3>
                         <div class="skill-box">
-                            <div class="skill-card">
+                            <div data-aos="zoom-in-left"  data-aos-duration="2000" class="skill-card">
                                 <img src="/assets/html.jpg" alt="">
                                 HTML
                             </div>
-                            <div class="skill-card">
+                            <div data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="2000" class="skill-card">
                                 <img src="/assets/css.png" alt="">
                                 CSS
                             </div>
-                            <div class="skill-card">
+                            <div data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="2000" class="skill-card">
                                 <img src="/assets/JS.jpg" alt="">
                                 Javascript
                             </div>
@@ -107,15 +112,15 @@
                     <div>
                         <h3>My Projects</h3>
                         <div class="skill-box">
-                            <div class="skill-card">
+                            <div data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="2000" class="skill-card">
                                 <img src="/assets/Screenshot (6).png" alt="">
                                 Portfolio
                             </div>
-                            <div class="skill-card">
+                            <div data-aos="zoom-in-left" data-aos-delay="600" data-aos-duration="2000" class="skill-card">
                                 <img src="/assets/Screenshot (7).png" alt="">
                                 Carshop
                             </div>
-                            <div class="skill-card">
+                            <div data-aos="zoom-in-left" data-aos-delay="800" data-aos-duration="2000" class="skill-card">
                                 <img src="/assets/Screenshot (8).png" alt="">
                                 Photo Gallery
                             </div>
@@ -129,7 +134,9 @@
     <section id="instructors">
         <div class="container ">
             <h1 class="headerText">Meet The Instructors</h1>
-            <div class="instructor-box">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"  class="instructor-box">
                 <div class="instructor-card">
                     <div class="instructor-comment">
                         <p>This program is designed to equip students with the skills necessary to interpret complex data, using various analytical and machine learning techniques. It encompasses a wide range of topics including statistical analysis, data visualization, and predictive modeling, all of which are crucial for making informed decisions in today's data-driven world. </p>
@@ -143,7 +150,9 @@
                         </div>
                     </div>
                 </div>                
-                <div class="instructor-card">
+                <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
                     <div class="instructor-comment">
                         <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
                     </div>
@@ -156,7 +165,9 @@
                         </div>
                     </div>
                 </div>                
-                <div class="instructor-card">
+                <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" data-aos-delay="400" class="instructor-card">
                     <div class="instructor-comment">
                         <p>Frontend development is all about the stuff you see and interact with on your screen, from the layout and buttons to the animations and interactive features.
 
@@ -238,8 +249,21 @@
     <section id="testimonials">
 
     </section>
+
+    <section id="banner">
+        <div id="countdown">
+            <div id="days"></div>
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+          </div>
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
     <script src="script.js"></script>
 </body>
 </html>

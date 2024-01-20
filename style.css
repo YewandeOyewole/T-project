@@ -223,6 +223,14 @@ nav ul li a{
     gap: 14px;
 }
 
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skills-container h3{
+    margin-bottom: 8px;
+}
 .skill-card{
     height: 150px;
     width: 200px;
