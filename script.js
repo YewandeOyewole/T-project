@@ -23,6 +23,19 @@ const swiper = new Swiper('.swiper', {
     },
   });
 // <<<<<<< HEAD
+
+
+const navbar = document.getElementById('nav')
+
+const ChangeBackground = () => {
+  if (window.scrollY >= 80) {
+    navbar.classList.add('header')
+  } else {
+      navbar.classList.remove('header')
+  }
+};
+document.addEventListener('scroll', ChangeBackground)
+
   
 
 // -------------------------- Typewriter Effect ---------------------------

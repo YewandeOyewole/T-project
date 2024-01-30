@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6a542743ba.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="script.js"></script> -->
-    <title>Document</title>
+    <title>FINAL PROJECT - Odumaretech Bootcamp</title>
 </head>
 <body>
-    <nav data-aos="flip-down">
+    <nav id="nav" data-aos="flip-down">
         <div class="logo">
             <a href="/"><span>Y</span>ewande <span>O</span>yewole</a>            
         </div>
@@ -29,9 +30,6 @@
             </li>
         </ul>
 
-        <div class="toogle-box">
-            <button><i id="tooglebtn" class="fa fa-bars"></i></button>
-        </div>
     </nav>
 
     <section id="hero">
@@ -252,31 +250,146 @@
     </section>
 
     <section id="testimonials">
+        <div class="container">
+            <div class="testimony-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3>Sodiq Jinad</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3>Sodiq Jinad</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3>Sodiq Jinad</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3>Sodiq Jinad</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3>Sodiq Jinad</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>            
+        </div>
 
     </section>
+
+
     <section id="coming-soon">
-        <div>
-              <h2>we are opening soon</h2>
+        <div class="overlay"></div>
+            <h1>
+                Are you about to take the next turn to become a Techie
+            </h1>
+
+            <div class="base">
+                <h2>Next Cohort is starting in</h2>
+            </div>
+              
               <div class="countdown">
-                <div class="container-day">
-                    <h3 class="day">Time</h3>
-                    <h3>Day</h3>
+                <div class="time-box">
+                    <h3 class="time day">Time</h3>
+                    <p>Day</p>
                 </div>
-                <div class="container-hour">
-                    <h3 class="hour">Time</h3>
-                    <h3>Hour</h3>
+                <div class="time-box">
+                    <h3 class="time hour">Time</h3>
+                    <p>Hour</p>
                 </div>
-                <div class="container-minutes">
-                    <h3 class="minutes">Time</h3>
-                    <h3>Minutes</h3>
+                <div class="time-box">
+                    <h3 class="time minutes">Time</h3>
+                    <p>Minutes</p>
                 </div>
-                <div class="container-second">
-                    <h3 class="second">Time</h3>
-                    <h3>Second</h3>
+                <div class="time-box">
+                    <h3 class="time second">Time</h3>
+                    <p>Second</p>
                 </div>  
               </div>
+
+        <div>
+            <a href=""><button class="regBtn">Register Now</button></a>
         </div>
-        <img class="waiting" src="assets/example.jpg" alt="">
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -285,5 +398,7 @@
       </script>
       
     <script src="script.js"></script>
+    <script src="testimony.js"></script>
+
 </body>
 </html>
