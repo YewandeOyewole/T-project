@@ -1,25 +1,26 @@
 const testimonyswiper = new Swiper('.testimony-swiper', {
-    // Optional parameters
-    speed: 1000,
-    spaceBetween: 10,
-  
-    direction: 'horizontal',
-    loop: true,
-  
-    autoplay: {
-        delay: 3000,
-      },
-      centeredSlides: true,
-      centeredSlidesBounds:true,
-
-      effect: 'coverflow',
-      coverflowEffect: {
-        rotate: 30,
-        slideShadows: false,
-      },
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-  });
+  speed: 1000,
+  spaceBetween: 50,
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+      delay: 3000,
+  },
+  centeredSlides: true,
+  effect: 'coverflow',
+  coverflowEffect: {
+      rotate: 0,
+      slideShadows: false,
+  },
+  scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: true,
+  },
+  navigation: {
+      nextEl: null,
+      prevEl: null,
+  },
+  pagination: {
+      el: null,
+  },
+});
