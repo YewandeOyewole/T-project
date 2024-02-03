@@ -3,42 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6a542743ba.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <title>FINAL PROJECT - Odumaretech Bootcamp</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav" data-aos="flip-down">
         <div class="logo">
             <a href="/"><span>Y</span>ewande <span>O</span>yewole</a>            
         </div>
 
-        <ul>
-         <li>
-            <a href="#experience">About Me</a>
-         </li>
-         <li>
-            <a href="">About Odumaretech</a>
-         </li>
-         <li>
-            <a href="">Linkedin</a>
-         </li>
+        <ul class="nav-link-box">
+            <li class="">
+                <a href="#experience">About Me</a>
+            </li>
+            <li>
+                <a href="">About Odumaretech</a>
+            </li>
+            <li>
+                <a href="">Linkedin</a>
+            </li>
         </ul>
+
     </nav>
 
+    <a href="https://api.whatsapp.com/send?phone=+447463692667&text=Hi%2C%20I%20learnt%20about%20you%20from%20Yewande%20Oyewole%2C%20I%27d%20like%20to%20know%20more%20about%20OdumareTech%20Bootcamp."
+    class="float" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i>
+ </a>
+ 
+ 
+
     <section id="hero">
-        <div class="container herobox" >
+        <div  class="container herobox" >
             <div class="hero-desc">
-              <h1>Odumaretech Final Project.</h1>
+              <h1 id="title"></h1>
               <p>Tribute Project</p>
-              <div class="hero-cta">
+              <div data-aos="fade-up" class="hero-cta">
                 <button class="btn">Explore</button>
                 <button class="btn">Contact</button>
               </div>
             </div>
 
-            <div class="hero-img">
+            <div data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="hero-img">
                 
 
                 <!-- Slider main container -->
@@ -68,70 +82,77 @@
 
 
     <section id="experience">
-        <div class="container">
-            <h1 class="headerText">My Experience</h1>
+        <div class="experience-container">
+            <div class="container">
+                <h1 class="headerText">My Experience</h1>
 
-            <div class="experience-box">
-                <div class="my-experience">
-                    <h2>Transitioning into Frontend Development</h2>
+                <div class="experience-box">
+                    <div class="my-experience">
+                        <h2 data-aos="fade-up-right"  data-aos-duration="1000">Transitioning into Frontend Development</h2>
 
-                    <p>After spending valuable time as a Business Manager, I have discovered a passion for coding and design. I am thrilled to embark on this new journey into the world of frontend development, where I can blend my business acumen with my newfound technical skills to create innovative solutions for our projects.</p>
+              
+                        <p data-aos="fade-up-right"  data-aos-duration="1000">After spending valuable time as a Business Manager, I have discovered a passion for coding and design. I am thrilled to embark on this new journey into the world of frontend development, where I can blend my business acumen with my newfound technical skills to create innovative solutions for our projects.</p>
 
-                    <div>
-                        
-                        <div class="social-icon">
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            <a href=""></a>
-                           </div>
-                    </div>
-                </div>
 
-                <div>
-                    <div>
-                        <h3>My Skills</h3>
-                        <div class="skill-box">
-                            <div class="skill-card">
-                                <img src="/assets/html.jpg" alt="">
-                                HTML
-                            </div>
-                            <div class="skill-card">
-                                <img src="/assets/css.png" alt="">
-                                CSS
-                            </div>
-                            <div class="skill-card">
-                                <img src="/assets/JS.jpg" alt="">
-                                Javascript
+                        <div>
+                            
+                            <div class="social-icon">
+                                <a data-aos="fade-up-right"  data-aos-duration="1000"  href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="100" href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" href=""><i class="fa-brands fa-instagram"></i></a>
+                                <!-- <a href=""></a> -->
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h3>My Projects</h3>
-                        <div class="skill-box">
-                            <div class="skill-card">
-                                <img src="/assets/Screenshot (6).png" alt="">
-                                Portfolio
+
+                    <div class="skills-container">
+                        <div>
+                            <h3>My Skills</h3>
+                            <div class="skill-box">
+                                <div data-aos="zoom-in-left"  data-aos-duration="2000" class="skill-card">
+                                    <img src="/assets/html.jpg" alt="">
+                                    HTML
+                                </div>
+                                <div data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="2000" class="skill-card">
+                                    <img src="/assets/css.png" alt="">
+                                    CSS
+                                </div>
+                                <div data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="2000" class="skill-card">
+                                    <img src="/assets/JS.jpg" alt="">
+                                    Javascript
+                                </div>
                             </div>
-                            <div class="skill-card">
-                                <img src="/assets/Screenshot (7).png" alt="">
-                                Carshop
-                            </div>
-                            <div class="skill-card">
-                                <img src="/assets/Screenshot (8).png" alt="">
-                                Photo Gallery
+                        </div>
+                        <div>
+                            <h3>My Projects</h3>
+                            <div class="skill-box">
+                                <div data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="2000" class="skill-card">
+                                    <img src="/assets/Screenshot (6).png" alt="">
+                                    Portfolio
+                                </div>
+                                <div data-aos="zoom-in-left" data-aos-delay="600" data-aos-duration="2000" class="skill-card">
+                                    <img src="/assets/Screenshot (7).png" alt="">
+                                    Carshop
+                                </div>
+                                <div data-aos="zoom-in-left" data-aos-delay="800" data-aos-duration="2000" class="skill-card">
+                                    <img src="/assets/Screenshot (8).png" alt="">
+                                    Photo Gallery
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
         </div>
+
     </section>
 
     <section id="instructors">
         <div class="container ">
             <h1 class="headerText">Meet The Instructors</h1>
-            <div class="instructor-box">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"  class="instructor-box">
                 <div class="instructor-card">
                     <div class="instructor-comment">
                         <p> It encompasses a wide range of topics including statistical analysis, data visualization, and predictive modeling, all of which are crucial for making informed decisions in today's data-driven world. </p>
@@ -145,7 +166,9 @@
                         </div>
                     </div>
                 </div>                
-                <div class="instructor-card">
+                <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
                     <div class="instructor-comment">
                         <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
                     </div>
@@ -158,7 +181,9 @@
                         </div>
                     </div>
                 </div>                
-                <div class="instructor-card">
+                <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" data-aos-delay="400" class="instructor-card">
                     <div class="instructor-comment">
                         <p>Frontend development is all about the stuff you see and interact with on your screen, from the layout and buttons to the animations and interactive features.
 
@@ -176,7 +201,9 @@
                 </div>                
             </div>
             <div class="instructor-btn">
-                <button >View More</button>
+                <a href="https://www.odumaretech.com/about" target="_blank">
+                    <button >View More</button>
+                </a>
             </div>
             
         </div>
@@ -230,38 +257,159 @@
                     </div>
                 </div>
             </div>
+            <div class="learn">
+                <a href="https://www.odumaretech.com/course" target="_blank"><button class="regBtn">Learn More</button></a>
+            </div>
         </div>
     </section>
 
     <section id="testimonials">
+        <div class="testify container">
+            <div class="testimony-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>It's been an exciting time learning Data Analytics in Odumaretech.
+                                I can boldly say I am more informed now and I have the basic knowledge required that I will build on to become a seasoned data analyst.
+                                
+                                Everyone here in Odumaretech is friendly and approachable right from its management to its tutors.  </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3> Abulude Benjamin Olayinka</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>Doing the program has been an amazing experience for me. I've been able to meet people in different profession  who have different perspective about life. The program has helped me to know more about data cleaning, analysis and presentation.  </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3> FUNMILAYO AKINLABI-IJITUSIN</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>My experience on the course has been valuable since of course, I was new to tech. I have learnt a lot with regards to Data collection, to cleaning, transforming.using various available tools such as Excel, Sequel, Power BI, Tableau, PowerPoint etc. Thank God for OdumareTech</p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3>Taiwo</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3>Sodiq Jinad</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-delay="200" class="instructor-card">
+                        <div class="instructor-comment">
+                            <p>The Data Analytics segment of the bootcamp involves the utilizing of soft and tech tools towards extracting meaningful insights from both structured and unstructured data. </p>
+                        </div>
+    
+                        <div class="instructor-details">
+                            <img src="/assets/webdev.jpg" alt="">
+                            <div class="instructor-desc">
+                                <h3>Sodiq Jinad</h3>
+                                <small>Data Analytics</small>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+            </div>            
+        </div>
 
     </section>
+
+
     <section id="coming-soon">
-        <div>
-              <h2>we are opening soon</h2>
+        <div class="overlay"></div>
+            <h1>
+                Are you about to take the next turn to become a Techie?
+            </h1>
+
+            <div class="base">
+                <h2>Next Cohort is starting in</h2>
+            </div>
+              
               <div class="countdown">
-                <div class="container-day">
-                    <h3 class="day">Time</h3>
-                    <h3>Day</h3>
+                <div class="time-box">
+                    <h3 class="time day">Time</h3>
+                    <p>Day</p>
                 </div>
-                <div class="container-hour">
-                    <h3 class="hour">Time</h3>
-                    <h3>Hour</h3>
+                <div class="time-box">
+                    <h3 class="time hour">Time</h3>
+                    <p>Hour</p>
                 </div>
-                <div class="container-minutes">
-                    <h3 class="minutes">Time</h3>
-                    <h3>Minutes</h3>
+                <div class="time-box">
+                    <h3 class="time minutes">Time</h3>
+                    <p>Minutes</p>
                 </div>
-                <div class="container-second">
-                    <h3 class="second">Time</h3>
-                    <h3>Second</h3>
+                <div class="time-box">
+                    <h3 class="time second">Time</h3>
+                    <p>Second</p>
                 </div>  
               </div>
+
+        <div>
+            <a href="https://www.odumaretech.com/register" target="_blank"><button class="regBtn">Register Now</button></a>
         </div>
-        <img class="waiting" src="assets/example.jpg" alt="">
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
     <script src="script.js"></script>
+    <script src="testimony.js"></script>
+
 </body>
 </html>

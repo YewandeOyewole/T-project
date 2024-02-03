@@ -8,7 +8,6 @@
     --color1:#B4D4FF;
     --color2:#86B6F6;
     --color3:#176B87;
-
     --Niconne: 'Niconne'; 
     --Nunito: 'nunito'; 
     --roboto: 'roboto'
@@ -20,6 +19,10 @@
     box-sizing: border-box;
 }
 
+p,h2, h3, small{
+    font-family: var(--Nunito);
+}
+
 .swiper {
     width: 100%;
     height: 300px;
@@ -29,6 +32,26 @@
 .swiper-slide img{
     width: 100%;
     height: 100%;
+}
+
+.float {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 5px;
+    margin-left: 1px;
 }
 
 
@@ -43,6 +66,7 @@
     margin-bottom: 2rem;
     text-align: center;
     font-size: 48px;
+    font-family: var(--Nunito);
 }
 
 .btn{
@@ -53,7 +77,10 @@
     font-weight: 500;
     transition: all .5s ease-in-out;
     font-size: 16px;
+    font-family: var(--Nunito);
 }
+
+
 
 /* ------------------------------------- */
 /* HEADER */
@@ -68,13 +95,55 @@ nav{
     padding: 0 3rem;
     position: fixed;
     border-bottom: 1px solid #176B87;
+    z-index: 99999;
+    transition: all .5s ease-in-out;
+}
+
+nav ul li a{
+    color: var(--color3);
+    font-weight: 600;
+    font-family: var(--Nunito);
+}
+
+
+
+.header{
+    background-color: #176B87;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.header ul li a{
+    color: white;
+    font-weight: 600;
 }
 
 .logo{
     font-family: var(--Nunito);
 }
+
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+}
+.header .logo a{
+    text-decoration: none;
+    
+    font-size: 18px;
+}
 .logo span{
     color: var(--color3);
+    font-size: 36px;
+    font-family: var(--Niconne);
+}
+.header .logo a{
+    color: #fff;
+}
+.header .logo span{
+    color: black;
+    font-size: 36px;
+    font-family: var(--Niconne);
 }
 
 
@@ -90,6 +159,23 @@ nav ul li a{
 
 }
 
+.toogle-box{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav{
+        justify-content: center;
+    }
+
+    .nav-link-box{
+        display: none;
+    }
+}
+
+
+
 /* ------------------------------------- */
 /* HERO SECTION */
 /* ------------------------------------- */
@@ -100,6 +186,7 @@ nav ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     
 }
 .herobox{
@@ -117,11 +204,13 @@ nav ul li a{
 }
 .hero-desc h1{
     font-size: 64px;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--color3);
+    font-family: var(--Nunito);
 }
 .hero-desc p{
     opacity: .5;
+    font-family: var(--Niconne);
 }
 .hero-cta{
     display: flex;
@@ -177,16 +266,20 @@ nav ul li a{
 /* ------------------------------------- */
 #experience{
     width: 100%;
-    background-color: #fff;
-    padding: 3rem 0;
-    background-image: url('assets/banner.jpg');
+    /* background-color: #fff; */
+    
+    background-image: url('/assets/banner.jpg');
     background-repeat: no-repeat;
-    object-fit: cover;
+    /* object-fit: contain; */
     background-position: center;
     background-size: cover;
 }
+.experience-container{
+    padding: 3rem 0;
+}
 #experience h1{
     color: #176B87;
+    font-family: var(--Nunito);
 }
 .experience-box{
     display: flex;
@@ -196,9 +289,9 @@ nav ul li a{
     padding-right: 2rem;
 }
 
-.my-experience h2{
-
-}
+/* .my-experience h2{
+    font-size: 24px;
+} */
 .my-experience p{
     margin: 2rem 0;
     color: gray;
@@ -209,6 +302,15 @@ nav ul li a{
     gap: 14px;
 }
 
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skills-container h3{
+    margin-bottom: 8px;
+    font-family: var(--Niconne);
+}
 .skill-card{
     height: 150px;
     width: 200px;
@@ -267,10 +369,11 @@ nav ul li a{
 /* INSTRUCTOR SECTION */
 /* ------------------------------------- */
 
-#instructors{
+#instructors, #testimonials{
     width: 100%;
     background-color: var(--color3);
     padding: 3rem 0;
+    overflow: hidden;
 }
 #instructors h1{
     color: #EEF5FF;
@@ -431,6 +534,43 @@ nav ul li a{
     display: block;
     text-align: center;
 }
+
+.learn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .odumare{
+        flex-direction: column;
+    }
+    .about-odumare, .course-box{
+        width: 100%;
+    }
+
+    .course-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .course-card{
+        width: 100%;
+        height: 300px;
+    }
+
+    .instructor-card{
+        width: 320px;
+        height: 280px;
+    }
+}
+
+
 #banner {
     width: 100%;
     height: 30vh;
@@ -439,26 +579,72 @@ nav ul li a{
     width: 100%;
     height: 100%;
 }
-h2 {
-    font-size: 5rem;
-    font-weight: bold;
-    padding: 3rem;
 
+.testify{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
+.testimony-swiper {
+    width: 300px;
+  }
+
+
 #coming-soon{
-    min-height: 100vh;
+    width: 100%;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
-}
-.countdown {
-    display: flex;
-    justify-content:space-around;
+    gap: 2rem;
     text-align: center;
+    background-image: url('/assets/dev.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    animation: change 20s infinite ease-in-out;
+}
+
+
+#coming-soon .overlay{
+    position: absolute;
+    padding: 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    transition: all .5s ease-in-out;
+    z-index: -1;
 
 }
+
+#coming-soon h1{
+    font-size: 3rem;
+    width: 80%;
+    color: white;
+    font-family: var(--Nunito);
+
+}
+.base{
+    background: black;
+    padding: 10px;    
+}
+#coming-soon h2{
+    font-style: italic;
+    color: #f7f8f9;
+    opacity: .7;
+
+    font-size: 32px;
+    font-family: var(--Niconne);
+    letter-spacing: 8px;
+}
+
 .day,.hour,.minutes,.second {
     font-size: 3rem;
 
@@ -466,3 +652,81 @@ h2 {
 .waiting{
     height: 50vh;
 }
+
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.time-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.time-box p{
+    color: white;
+    font-family: var(--Niconne);
+
+}
+
+.time{
+    height: 70px;
+    width: 70px;
+    border-radius: 6px;
+    border: 3px groove var(--color3);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: #fff;
+}
+
+.regBtn{
+    padding: 18px;
+    width: 200px;
+    border-radius: 8px;
+    font-weight: 600;
+    background: var(--color2);
+    color: var(--color3);
+    border: none;
+    z-index: 10;
+    transition: all .4s ease-in-out;
+    
+}
+.regBtn:hover{
+    color: white;
+    background-color: black;
+    border: none;
+    
+}
+
+@media screen and (max-width:430px) {
+    #coming-soon h1{
+        font-size: 2.5rem;
+        width: 90%;
+    
+    }
+}
+
+
+@keyframes change{
+    0%{
+      background-image: url(/assets/webdev.jpg);
+    }
+    30%{
+      background-image: url(/assets/dev11.jpeg);
+    }
+    60%{
+      background-image: url(/assets/dev.jpeg);
+    }
+    80%{
+      background-image: url(/assets/webdev.jpg);
+    }
+    100%{
+      background-image: url(/assets/dev11.jpeg);
+    }
+  
+  }
