@@ -391,7 +391,7 @@ nav ul li a{
 
 .instructor-card{
     width: 320px;
-    height: 250px;
+    height: 280px;
     background: #EEF5FF;
     border-radius: 16px;
     padding: 2rem;
@@ -399,6 +399,11 @@ nav ul li a{
     flex-direction: column;
     justify-content: space-between;
 }
+
+.testi-card{
+    height: 350px;
+}
+
 .instructor-comment{
     padding-bottom: 8px;
     border-bottom: 1px solid #176B87;
@@ -694,6 +699,7 @@ nav ul li a{
     border: none;
     z-index: 10;
     transition: all .4s ease-in-out;
+    z-index: 999;
     
 }
 .regBtn:hover{
