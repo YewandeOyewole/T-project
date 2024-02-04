@@ -720,13 +720,13 @@ nav ul li a{
 
 @keyframes change{
     0%{
-      background-image: url(/assets/webdev.jpg);
+      background-image: url('assets/webdev.jpg');
     }
     30%{
-      background-image: url(/assets/dev11.jpeg);
+      background-image: url('assets/dev11.jpeg');
     }
     60%{
-      background-image: url(/assets/dev.jpeg);
+      background-image: url('assets/dev.jpeg');
     }
     80%{
       background-image: url(/assets/webdev.jpg);
