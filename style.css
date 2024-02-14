@@ -245,10 +245,17 @@ nav ul li a{
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        padding-top: 3rem;
     }
 
     .hero-desc, .hero-img{
         width: 100%;
+    }
+    .hero-desc h1, .hero-desc p{
+        text-align: center;
+    }
+    .headerText{
+        font-size: 32px;
     }
 }
 
@@ -453,6 +460,8 @@ nav ul li a{
     color: #EEF5FF;
     background-color: black;
 }
+
+
 
 /* ------------------------------------- */
 /* ODUMARETECH SECTION */
@@ -736,3 +745,32 @@ nav ul li a{
     }
   
   }
+
+  @media screen and (max-width: 400px) {
+    .instructor-card{
+        width: 100%;
+        height: 350px;
+        background: #EEF5FF;
+        border-radius: 16px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .skill-box{
+        flex-direction: column;
+    }
+
+    .skill-card{
+        height: 250px;
+        width: 100%;
+        border: 1px solid #f4f4f4;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        position: relative;
+    }
+}
