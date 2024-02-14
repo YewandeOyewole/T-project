@@ -22,7 +22,6 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
-// <<<<<<< HEAD
 
 
 const navbar = document.getElementById('nav')
